@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Sofi.Id</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="foto/icon.jpeg">
+</head>
+<body>
+ <header class="navbar">
+    <h2 class="logo">Sofi.id</h2>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="blogpage.html">Blog</a>
+        <a href="contactpage.html">Contact</a>
+        <a href="gallerypage.html">Gallery</a>
+    </nav>
+</header>
+
+<section class="welcome">
+    <div class="welcome-img">
+    <div class="img-bg">
+    <div class="circle">
+    <div class="img-bg2">
+        <img src="foto/fotohomepage1.jpeg" alt="Profile">
+    </div>
+    </div>
+    </div>
+</div>
+
+    <div class="welcome-text">
+        <h1>Hello I'm <span>Sofi</span></h1>
+        <h2>I'm an <span id="typing"></span></h2>
+
+        <p>
+            welcome to my personal website
+        </p>
+
+
+        <div class="social">
+            <a href="https://www.instagram.com/sofi_tulangow?igsh=c3M1OGxpMGVoNHZv&utm_source=qr">Instagram</a>
+            <p>|</p>
+            <a href="https://www.facebook.com/share/1GUSY3vkVU/?mibextid=wwXIfr">Facebook</a>
+        </div>
+    </div>
+
+</section>
+
+<script>
+    const text = "informatics engineering student";
+    let i = 0;
+
+    function typing() {
+        if (i < text.length) {
+            document.getElementById("typing").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typing, 50);
+        }
+    }
+
+typing();
+</script>
+</body>
+</html>
