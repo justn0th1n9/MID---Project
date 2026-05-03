@@ -416,22 +416,7 @@ nav a:hover {
     max-height: 80vh;
     overflow-y: auto;
 }
-.modal {
-    z-index: 99999;
-}
 
-.navbar {
-    z-index: 1000;
-}
-@media (max-width: 768px) {
-    .modal {
-    z-index: 99999;
-}
-
-.navbar {
-    z-index: 1000;
-}
-}
 /* Close button */
 .close {
     float: right;
